@@ -1,0 +1,295 @@
+/* ============================================================
+   GRIT Learn v2 — Design Tokens
+   Single source of truth. Only tokens actually used.
+   ============================================================ */
+
+:root {
+
+  /* ── Brand ── */
+  --brand-primary:   #5b4ef8;
+  --brand-secondary: #9b59fa;
+  --brand-accent:    #f59e0b;
+  --brand-rose:      #f43f5e;
+
+  /* ── Accent (mapped to brand) ── */
+  --accent:      var(--brand-primary);
+  --accent-rgb:  91, 78, 248;
+  --gold:        #f59e0b;
+  --info:        #0ea5e9;
+  --success:     #10b981;
+  --warning:     #f59e0b;
+  --error:       #ef4444;
+
+  /* ── Semantic state colors ── */
+  --success-bg:     rgba(16,185,129,0.09);
+  --success-border: rgba(16,185,129,0.22);
+  --error-bg:       rgba(239,68,68,0.09);
+  --error-border:   rgba(239,68,68,0.22);
+  --warning-bg:     rgba(245,158,11,0.09);
+  --warning-border: rgba(245,158,11,0.22);
+  --info-bg:        rgba(14,165,233,0.09);
+  --info-border:    rgba(14,165,233,0.22);
+
+  /* ── Named colors used in JS/HTML ── */
+  --amber-300:   #fcd34d;
+  --amber-500:   #f59e0b;
+  --green-400:   #34d399;
+  --green-500:   #10b981;
+  --red-400:     #f87171;
+  --red-500:     #ef4444;
+  --sky-500:     #0ea5e9;
+  --violet-400:  #a78bfa;
+  --violet-500:  #8b5cf6;
+  --violet-700:  #6d28d9;
+
+  /* ── Level colors ── */
+  --level-bronze:  #cd7f32;
+  --level-silver:  #9ca3af;
+  --level-gold:    #f59e0b;
+  --level-diamond: #67e8f9;
+  --level-legend:  #a78bfa;
+
+  /* ── Backgrounds — Light ── */
+  --bg:      #f0effe;
+  --bg2:     #e6e4fb;
+  --bg3:     #d9d7f5;
+
+  /* ── Surfaces — Light ── */
+  --surface:  #ffffff;
+  --surface2: #faf9ff;
+  --surface3: #f3f2fc;
+
+  /* ── Glass — Light ── */
+  --glass-bg:         rgba(255,255,255,0.70);
+  --glass-bg-strong:  rgba(255,255,255,0.88);
+  --glass-bg-subtle:  rgba(255,255,255,0.45);
+  --glass-border:     rgba(255,255,255,0.65);
+  --glass-border-inner: rgba(255,255,255,0.30);
+  --glass-blur:    blur(20px) saturate(180%);
+  --glass-blur-sm: blur(10px) saturate(160%);
+  --glass-blur-lg: blur(32px) saturate(200%);
+
+  /* ── Surface glass shorthand ── */
+  --surface-glass: var(--glass-bg);
+
+  /* ── Borders — Light ── */
+  --border:        rgba(91,78,248,0.09);
+  --border2:       rgba(91,78,248,0.16);
+  --border-glass:  rgba(255,255,255,0.60);
+
+  /* ── Overlays ── */
+  --overlay-soft:   rgba(91,78,248,0.04);
+  --overlay-medium: rgba(91,78,248,0.09);
+  --overlay-strong: rgba(91,78,248,0.16);
+
+  /* ── Typography ── */
+  --text:   #0a0818;
+  --text1:  #0a0818;   /* alias for --text */
+  --text2:  #3d3960;
+  --text3:  #7a76a8;
+  --text4:  #b0acce;
+  --text-inv: #ffffff;
+
+  --font:         'Cairo', sans-serif;
+  --font-display: 'Cairo', sans-serif;
+
+  --text-2xs: 9px;
+  --text-xs:  11px;
+  --text-sm:  12px;
+  --text-base: 14px;
+  --text-md:  15px;
+  --text-lg:  17px;
+  --text-xl:  20px;
+  --text-2xl: 24px;
+
+  --fw-thin:    300;
+  --fw-regular: 400;
+  --fw-medium:  600;
+  --fw-bold:    700;
+  --fw-black:   900;
+
+  --lh-tight:  1.25;
+  --lh-snug:   1.4;
+  --lh-normal: 1.6;
+  --ls-tight:  -0.03em;
+
+  /* ── Spacing (8px grid) ── */
+  --sp-1:  4px;
+  --sp-2:  8px;
+  --sp-3:  12px;
+  --sp-4:  16px;
+  --sp-5:  20px;
+  --sp-6:  24px;
+  --sp-7:  28px;
+  --sp-12: 48px;
+
+  /* ── Radii ── */
+  --radius-xs: 6px;
+  --radius-sm: 10px;
+  --radius:    16px;
+  --radius-md: 18px;
+  --radius-lg: 22px;
+  --radius-xl: 28px;
+  --radius-2xl:36px;
+  --radius-full: 9999px;
+
+  /* ── Shadows ── */
+  --shadow-2xs: 0 1px 2px rgba(60,50,140,0.05);
+  --shadow-xs:  0 1px 4px rgba(60,50,140,0.08);
+  --shadow-sm:  0 2px 8px rgba(60,50,140,0.10);
+  --shadow:     0 4px 16px rgba(60,50,140,0.12);
+  --shadow-md:  0 8px 24px rgba(60,50,140,0.14);
+  --shadow-lg:  0 12px 40px rgba(60,50,140,0.18);
+  --shadow-xl:  0 20px 60px rgba(60,50,140,0.22);
+  --shadow-2xl: 0 32px 80px rgba(60,50,140,0.26);
+
+  --shadow-accent:  0 8px 24px rgba(91,78,248,0.32), 0 2px 8px rgba(91,78,248,0.16);
+  --shadow-accent2: 0 4px 14px rgba(91,78,248,0.22);
+  --shadow-gold:    0 8px 24px rgba(245,158,11,0.30);
+  --shadow-green:   0 8px 24px rgba(16,185,129,0.28);
+  --shadow-red:     0 8px 24px rgba(239,68,68,0.28);
+  --shadow-glass:   0 8px 32px rgba(31,28,120,0.12);
+
+  /* ── Gradients — used in JS/CSS ── */
+  --grad-primary:  linear-gradient(135deg, #7c6ffc 0%, #5b4ef8 50%, #4338f0 100%);
+  --grad-hero:     linear-gradient(135deg, #4338f0 0%, #5b4ef8 40%, #9b59fa 100%);
+  --grad-hero2:    linear-gradient(160deg, #1e1b4b 0%, #3730a3 35%, #5b4ef8 70%, #9b59fa 100%);
+  --grad-cosmic:   linear-gradient(135deg, #1e1b4b 0%, #312e81 30%, #4338f0 60%, #7c6ffc 100%);
+  --grad-gold:     linear-gradient(135deg, #fcd34d 0%, #f59e0b 50%, #d97706 100%);
+  --grad-success:  linear-gradient(135deg, #6ee7b7 0%, #059669 100%);
+  --grad-error:    linear-gradient(135deg, #fca5a5 0%, #dc2626 100%);
+  --grad-red:      linear-gradient(135deg, #f87171 0%, #dc2626 100%);
+  --grad-sunset:   linear-gradient(135deg, #f97316 0%, #ec4899 50%, #9b59fa 100%);
+  --grad-aurora:   linear-gradient(135deg, #34d399 0%, #0ea5e9 50%, #9b59fa 100%);
+  --grad-mesh-dark:
+    radial-gradient(at 40% 20%, rgba(91,78,248,0.28) 0px, transparent 50%),
+    radial-gradient(at 80% 0%,  rgba(245,158,11,0.18) 0px, transparent 50%),
+    radial-gradient(at 0% 50%,  rgba(16,185,129,0.15) 0px, transparent 50%);
+
+  /* ── Mesh for light mode ── */
+  --grad-mesh-1:
+    radial-gradient(at 40% 20%, rgba(91,78,248,0.10) 0px, transparent 50%),
+    radial-gradient(at 80% 0%,  rgba(245,158,11,0.07) 0px, transparent 50%),
+    radial-gradient(at 0% 50%,  rgba(16,185,129,0.07) 0px, transparent 50%),
+    radial-gradient(at 80% 50%, rgba(59,130,246,0.07) 0px, transparent 50%),
+    radial-gradient(at 0% 100%, rgba(91,78,248,0.09) 0px, transparent 50%);
+
+  /* ── Level gradients ── */
+  --grad-bronze: linear-gradient(135deg, #e8a87c 0%, #cd7f32 50%, #a0522d 100%);
+  --grad-silver: linear-gradient(135deg, #e2e8f0 0%, #94a3b8 50%, #64748b 100%);
+
+  /* ── Noise texture ── */
+  --noise: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+
+  /* ── Easing ── */
+  --ease:        cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-in:     cubic-bezier(0.4, 0, 1, 1);
+  --ease-out:    cubic-bezier(0, 0, 0.2, 1);
+  --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+
+  /* ── Durations ── */
+  --dur-fast:   140ms;
+  --dur:        220ms;
+  --dur-slow:   380ms;
+  --dur-slower: 560ms;
+  --dur-long:   1100ms;
+
+  /* ── Layout ── */
+  --nav-h:      64px;
+  --header-h:   54px;
+  --page-pad:   20px;
+
+  /* ── Z-index layers ── */
+  --z-sticky:  200;
+  --z-overlay: 500;
+  --z-modal:   600;
+  --z-popup:   700;
+  --z-toast:   800;
+  --z-splash:  900;
+  --z-top:     999;
+}
+
+/* ── Dark mode ── */
+[data-theme="dark"] {
+  --bg:      #07061a;
+  --bg2:     #0e0c2a;
+  --bg3:     #16143a;
+
+  --surface:  #0f0d28;
+  --surface2: #141232;
+  --surface3: #1a1840;
+
+  --glass-bg:        rgba(15,13,40,0.76);
+  --glass-bg-strong: rgba(15,13,40,0.92);
+  --glass-bg-subtle: rgba(15,13,40,0.52);
+  --glass-border:    rgba(91,78,248,0.22);
+  --glass-border-inner: rgba(91,78,248,0.12);
+
+  --border:  rgba(91,78,248,0.12);
+  --border2: rgba(91,78,248,0.22);
+
+  --overlay-soft:   rgba(91,78,248,0.05);
+  --overlay-medium: rgba(91,78,248,0.11);
+  --overlay-strong: rgba(91,78,248,0.20);
+
+  --text:   #f0eeff;
+  --text1:  #f0eeff;
+  --text2:  #a09dc8;
+  --text3:  #5e5c88;
+  --text4:  #3a3860;
+
+  --success-bg:     rgba(16,185,129,0.13);
+  --success-border: rgba(16,185,129,0.26);
+  --error-bg:       rgba(239,68,68,0.13);
+  --error-border:   rgba(239,68,68,0.26);
+  --warning-bg:     rgba(245,158,11,0.13);
+  --warning-border: rgba(245,158,11,0.26);
+
+  --shadow-2xs: 0 1px 2px rgba(0,0,0,0.22);
+  --shadow-xs:  0 1px 4px rgba(0,0,0,0.28);
+  --shadow-sm:  0 2px 8px rgba(0,0,0,0.32);
+  --shadow:     0 4px 16px rgba(0,0,0,0.38);
+  --shadow-md:  0 8px 24px rgba(0,0,0,0.42);
+  --shadow-lg:  0 12px 40px rgba(0,0,0,0.48);
+  --shadow-xl:  0 20px 60px rgba(0,0,0,0.54);
+
+  --grad-mesh-1:
+    radial-gradient(at 40% 20%, rgba(91,78,248,0.30) 0px, transparent 50%),
+    radial-gradient(at 80% 0%,  rgba(245,158,11,0.18) 0px, transparent 50%),
+    radial-gradient(at 0% 50%,  rgba(16,185,129,0.15) 0px, transparent 50%),
+    radial-gradient(at 80% 50%, rgba(59,130,246,0.15) 0px, transparent 50%),
+    radial-gradient(at 0% 100%,rgba(91,78,248,0.20) 0px, transparent 50%);
+}
+
+/* ── Utility classes ── */
+.text-gradient {
+  background: var(--grad-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.text-gradient-gold {
+  background: var(--grad-gold);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.glass {
+  background: var(--glass-bg);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+  border: 1px solid var(--glass-border);
+}
+.glass-strong {
+  background: var(--glass-bg-strong);
+  backdrop-filter: var(--glass-blur-lg);
+  -webkit-backdrop-filter: var(--glass-blur-lg);
+  border: 1px solid var(--glass-border);
+}
+
+/* ── Glow effects (referenced in existing screens.css) ── */
+:root {
+  --glow-accent2: 0 0 12px rgba(91,78,248,0.25);
+  --glow-gold:    0 0 20px rgba(245,158,11,0.38), 0 0 40px rgba(245,158,11,0.16);
+}
